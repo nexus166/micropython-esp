@@ -1,0 +1,1 @@
+any *.py (recursive) in the ./frozen_extras/ directory will be mpy'd and copied to the board right after the flashing process is completed, for non-core modules and whatever doesn't fit the above ( frozen_extras/* )

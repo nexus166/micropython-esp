@@ -1,0 +1,4 @@
+- any *.py, !!!NOT recursive!!! in this directory will be mpy'd and included in the final firmware blob ( ./*.py )
+- any *.py, (recursive) in the ./$BOARD/ directory will be mpy'd and included in the final firmware blob. This is for board-specific drivers etc. ( GENERIC/* )
+- any *.py (recursive) in the ./micropython/ directory will be mpy'd and included in the final firmware blob ( micropython/* )
+- any *.py (recursive) in the ./frozen_extras/ directory will be mpy'd and copied to the board right after the flashing process is completed, for non-core modules and whatever doesn't fit the above ( frozen_extras/* )
